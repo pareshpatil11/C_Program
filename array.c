@@ -1,28 +1,17 @@
- 
-int main() 
-{ 
-    int arr[10]; 
-    int sum,product,i;
-  
-    /*Read array elements*/
-    printf("\nEnter elements : \n"); 
-    for(i=0; i<10; i++) 
-    { 
-        printf("Enter arr[%d] : ",i); 
-        scanf("%d",&arr[i]); 
-    } 
-     
-    /*calculate sum and product*/
-    sum=0;
-    product=1;
-    for(i=0; i<10; i++)
+#include<stdio.h>
+
+void main()
+{
+    int z[4];
+    int i;
+
+    z[0]=1;
+    z[1]=2;
+    z[2]=3;
+    z[3]=4;
+
+    for(i=0;i<=3;i++)
     {
-        sum=sum+arr[i];
-        product=product*arr[i];
+        printf("%d \n",z[i]);
     }
-       
-    printf("\nSum of array is     : %d"  ,sum); 
-    printf("\nProduct of array is : %d\n",product); 
-  
-    return 0; 
 }
